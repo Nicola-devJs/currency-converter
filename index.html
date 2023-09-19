@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <title>Currency</title>
+   </head>
+   <body>
+      <div id="currency" class="currency">
+         <header>Курс валют</header>
+         <form action="#">
+            <div class="currency__amount">
+               <p>Введите сумму</p>
+               <input data-type="input" type="text" value="1" />
+            </div>
+            <div class="currency__body">
+               <div class="from select" data-select="from">
+                  <p>От</p>
+               </div>
+               <span
+                  class="exchange material-symbols-outlined"
+                  data-type="redefine"
+               >
+                  currency_exchange
+               </span>
+               <div class="to select" data-select="to">
+                  <p>В</p>
+               </div>
+            </div>
+            <div id="rate" class="exchange-rate">1 USD = 82.52 RUP</div>
+            <button data-type="submit">Обновить курс</button>
+         </form>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>
